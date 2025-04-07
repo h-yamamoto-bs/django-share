@@ -10,4 +10,4 @@ class Product(models.Model):
 
 # 新規作成・編集完了時のリダイレクト先
 def get_absolute_url(self):
-    return redirect('/crud') # urlの逆びき
+    return reverse('list') # urlの逆びき
